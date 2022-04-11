@@ -1,0 +1,48 @@
+@misc{bworld,
+author = {Ingo},
+title = {BWorld Robot Control Software},
+howpublished = "\url{http://aiweb.techfak.uni-bielefeld.de/content/bworld-robot-control-software/}",
+year = {2008}, 
+note = "[Online; accessed 19-July-2008]"
+}
+
+@misc{9,
+author = {Wikipedia},
+title = {LaTeX},
+year = {2014},
+url = "http://en.wikipedia.org/w/index.php?title=LaTeX&oldid=413720397",
+note = "[Online; accessed 8-November-2014]"
+}
+
+@misc{2009:mandel,
+author = {Jan Mandel},
+title = {A Brief Tutorial on the Ensemble {K}alman Filter},
+howpublished = {arXiv:0901.3725v1 [physics.ao-ph]},
+month = jan,
+year = {2009},
+}
+
+@book{zeidler:nfa88IIa,
+author = "E. Zeidler",
+title = "Nonlinear {F}unctional {A}nalysis",
+publisher = "Springer Verlag",
+year = "1988",
+volume = "IIa",
+address = "New York",
+}
+
+@book{ lamport ,
+author = "Leslie Lamport" ,
+title = "\LaTeX: A Document Preparation System" ,
+publisher = "Addison--Wesley Pub.\ Co." ,
+year = "1986" ,
+address = "Reading, MA"
+}
+
+@book{ goossens ,
+author = "Michel Goossens and Frank Mittelbach and Alexander Samarin" ,
+title = "The \LaTeX Companion" ,
+publisher = "Addison--Wesley Pub.\ Co." ,
+year = "1994" ,
+address = "Reading, MA"
+}

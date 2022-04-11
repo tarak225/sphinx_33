@@ -1,0 +1,355 @@
+
+.. _$_00-a-test-directives:
+
+===============
+Test Directives
+===============
+
+
+Using ODS file system, this is a link to display a referenced file
+   See :download:`this example download <\requirements.txt>`.
+
+.. raw:: html
+
+    Now is the time to use a <font color="red">red</font> word in a sentence.
+
+\
+
+.. exceltable::
+   :file: $_00-b-excel-test.xls
+   :header: 1
+   :selection: A1:C3
+
+.. csv-table::
+   :header: "Services", "Ontomatica Products", "Technologies"
+   :widths: 15, 20, 25
+
+   "Application Services", ":ref:`Navigator <terms-Navigator>`", ":ref:`Label Classes <terms-Label-Class>`"
+   "Deposition Services", ":ref:`OnLine <terms-OnLine>`", ":ref:`Message deposit <terms-Message-Deposit>`"
+   "", "", ":ref:`Web deposit <terms-Web-Deposit>`"
+   "", ":ref:`OnTop <terms-OnTop>`", ":ref:`Label Classes <terms-Label-Class>`"
+   "", "", ":ref:`Parser <terms-Parser>` (:ref:`lex ++ <terms-lex-++>` )"
+   "", "", ":ref:`Regular Expression <terms-Regular-Expression>`"
+   "Data Services", ":ref:`OnDemand <terms-OnDemand>`", ":ref:`MySQL <terms-MySQL>`"
+
+
+.. http:get:: /users/(int:user_id_)/posts/(tag)
+
+   **Request**:
+
+   .. sourcecode:: http
+
+      GET /users/123/posts/web HTTP/1.1
+      Host: example.com
+      Accept: application/json, text/javascript
+
+   **Response**:
+
+   .. sourcecode:: http
+
+      HTTP/1.1 200 OK
+      Vary: Accept
+      Content-Type: text/javascript
+
+      [
+        {
+          "post_id": 12345,
+        },
+        {
+          "post_id": 12346,
+        }
+      ]
+
+   :query sort: one of ``hit``, ``created-at``
+   :query offset: offset number. default is 0
+   :query limit: limit number. default is 30
+   :reqheader Accept: the response content type depends on :mailheader:`Accept` header
+   :reqheader Authorization: optional OAuth token to authenticate
+   :resheader Content-Type: this depends on :mailheader:`Accept` header of request
+   :statuscode 200: no error
+   :statuscode 404: there's no user
+
+Napoleon strings
+^^^^^^^^^^^^^^^^
+
+:param path: The path of the file to wrap
+:param field_storage: The :class:`FileStorage` instance to wrap
+:param temporary: Whether or not to delete the file when the File instance is destructed
+:type path: str
+:type field_storage: FileStorage
+:type temporary: bool
+:returns: A buffered writable file descriptor
+:rtype: BufferedFileStorage
+:args: Arguments
+:attributes: Attribute text
+:keyword: A keyword here
+:methods: A long string that labels a method
+:references: Need to see what this looks like
+
+Markup
+^^^^^^
+
+`Information about Ontomatica: <http://ontomatica.com>`_
+
+The "rst-role" produces red text in a blue box: one term
+
+.. rst:role:: cite
+
+The "rst-directive" produces red text in a blue box: two term
+
+.. rst:directive:: .. onto-lib:: refs.bib [...]
+
+Substitution instruction before substitution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. |reST| replace:: reStructuredText
+
+Yes, |reST| is a long word, so I can't blame anyone for wanting to abbreviate it.
+
+As |reST| doesn't support nested inline markup, the only way to create a reference with styled text is to use substitutions with the "replace" directive:
+
+I recommend you try |Python|_.
+
+.. |Python| replace:: Python, *the* best language around
+.. _Python: http://www.python.org/
+
+More markup
+^^^^^^^^^^^
+
+- This is the first bullet list item.  The blank line above the first list item is required; blank lines between list items (such as below this paragraph) are optional.
+
+- This is the first paragraph in the second item in the list.
+
+  This is the second paragraph in the second item in the list. The blank line above this paragraph is required.  The left edge of this paragraph lines up with the paragraph above, both indented relative to the bullet.
+
+  - This is a sublist.  The bullet lines up with the left edge of the text blocks above.  A sublist is a new list so requires a blank line above and below.
+
+- This is the third item of the main list.
+
+This paragraph is not part of the list.
+
+Sidebars
+^^^^^^^^
+
+.. sidebar:: Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+
+   Subsequent indented lines comprise the body of the sidebar, and are interpreted as body elements.
+
+1. Item 1 initial text.
+
+   a) Item 1a.
+   b) Item 1b.
+
+2. a) Item 2a.
+   b) Item 2b.
+
+term 1
+    Definition 1.
+
+term 2
+    Definition 2, paragraph 1.
+
+    Definition 2, paragraph 2.
+
+term 3 : classifier
+    Definition 3.
+
+term 4 : classifier one : classifier two
+    Definition 4.
+
+Doctree element: literal_block. This is a typical paragraph.  An indented literal block follows.
+::
+
+    for a in [5,4,3,2,1]:
+        print a
+    print "it's..."
+
+This text has returned to the indentation of the first paragraph, is outside of the literal block, and is therefore treated as an ordinary paragraph.
+
+Tables
+^^^^^^
+
+Grid tables; header row is optional
+
++------------------------+------------+----------+----------+
+| Header row             | Header 2   | Header 3 | Header 4 |
++========================+============+==========+==========+
+| body row 1             | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+| body row 2             | Cells may span columns.          |
++------------------------+------------+---------------------+
+| body row 3             | Cells may  | - Table cells       |
++------------------------+ span rows. | - contain           |
+| body row 4             |            | - body elements.    |
++------------------------+------------+---------------------+
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
+Comments
+^^^^^^^^
+
+..
+   This is a comment
+
+Emphasis
+^^^^^^^^
+
+This is *emphasized text*.
+
+This is **strong text**.
+
+This is `interpreted text`.
+
+This text is an example of ``inline literals``.
+
+.. _inline-markup:
+
+Inline Markup
+-------------
+
+Words can have *emphasis in italics* or be **bold** and you can define code samples with back quotes, like when you talk about a command: ``sudo`` gives you super user powers!
+
+Note: these instructions are indented.
+
+:Website: http://noble.gs.washington.edu/proj/genomedata
+:Author: Michael M. Hoffman <mmh1 at washington dot edu>
+:Organization: University of Washington
+:Address: Department of Genome Sciences, PO Box 355065, Seattle, WA 98195-5065, United States of America
+:Copyright: 2009 Michael M. Hoffman
+
+Installation
+------------
+
+Example of a script (note that :: with no leading space signifies a colon and free-form text)
+
+A simple, interactive script_ has been created to install Genomedata (and most dependencies) on any \*nix platform. For instance::
+
+  wget http://noble.gs.washington.edu/proj/genomedata/install.py
+  python install.py
+
+.. _script: http://noble.gs.washington.edu/proj/genomedata/install.py
+
+.. note::
+  The following are prerequisites:
+
+  - Linux/Unix
+      This software has been tested on Linux and Mac OS X systems. We would love to add support for other systems in the future and will gladly accept any contributions toward this end.
+  - Python 2.5 or 2.6
+
+.. attention:: And, by the way, it's orange...
+.. caution:: And, by the way, it's orange...
+.. danger:: And, by the way, it's red...
+.. error:: And, by the way, it's red...
+.. hint:: And, by the way, it's green...
+.. important:: And, by the way, it's green...
+.. tip:: And, by the way, it's green...
+.. warning:: And, by the way, it's orange...
+
+In the text below there is a space after "enter" and before the double colons - no literal colon is used here.
+
+.. compound::
+
+   The 'rm' command is very dangerous.  If you are logged
+   in as root and enter ::
+
+       cd /
+       rm -rf *
+
+   you will erase the entire contents of your file system. the end.
+
+Overview
+--------
+
+Under the surface, Genomedata is :ref:`implemented <Implementation>` as one or more HDF5 files, but Genomedata provides a transparent interface to interact with your underlying data.
+
+The Genomedata hierarchy:
+
+  Each :class:`Genome` contains many :class:`Chromosomes <Chromosome>`
+    Each :class:`Chromosome` contains many :class:`Supercontigs <Supercontig>`
+      Each :class:`Supercontig` contains one ``continuous`` data set
+        Each ``continuous`` data set is a numpy.array of floating point numbers with a column for each data track and a row for each base in the data set.
+
+The following puts "Implementation" into the menu but keeps text on same page.
+
+.. _Implementation:
+
+Implementation
+--------------
+
+Genomedata archives are implemented as one or more HDF5 files. The :ref:`API <inline-markup>`  handles both single-file and directory archives transparently, but the implementation options exist for several performance reasons.
+
+Use a **directory** with few chromosomes/scaffolds:
+  * Parallel load/access
+  * Smaller file sizes
+
+Creation
+--------
+
+A Genomedata archive contains sequence and may also contain numerical data associated with that sequence. You can easily load sequence and numerical data into a Genomedata archive with the :ref:`inline-markup`  command (see command details additional details)
+::
+
+    genomedata-load [-t trackname=signalfile]... [-s sequencefile]... GENOMEDATAFILE
+
+
+1. signal_high.bed.gz
+::
+
+     chrY    0       12      4.67
+     chrY    20      23      9.24
+     chr1    1       3       2.71
+     chr1    3       6       1.61
+     chr1    6       24      3.14
+
+Basic usage
+-----------
+
+Example of an inline comment that is greyed out and is inforce until a blank newline
+
+**Get arbitrary data** (data from first 3 tracks for region chr8:999-1000):
+
+>>> chromosome = genome["chr8"]
+>>> chromosome[999:1001, 0:3]  # Note the half-open, zero-based indexing
+array([[ NaN,  NaN,  NaN],
+       [ 3. ,  5.5,  3.5], dtype=float32)
+
+genomedata-load
+---------------
+
+Usage information follows, but in summary, this script takes as input:
+
+- sequence files in |sequence file formats| format, where the sequence identifiers are the names of the chromosomes/scaffolds to create.
+- trackname, datafile pairs (specified as ``trackname=datafile``), where:
+    * trackname is a ``string`` identifier (e.g. ``broad.h3k27me3``)
+    * datafile contains signal data for this data track in one of the following formats: |signal file formats|
+    * the chromosomes/scaffolds referred to in the datafile MUST be identical to those found in the sequence files
+- the name of the Genomedata archive to create
+
+.. |signal file formats| replace:: |signal data formats|, or a gzip'd form of any of the preceding
+
+.. |sequence file formats| replace:: FASTA_ ( ``.fa`` or ``.fa.gz`` )
+
+.. _FASTA: http://www.ncbi.nlm.nih.gov/blast/fasta.shtml
+
+genomedata-load-data
+--------------------
+
+This command loads data from stdin into Genomedata under the given trackname. The input data must be in one of these supported datatypes:
+|signal data formats|. 
+
+.. |signal data formats| replace:: WIG_, BED_, bedGraph_
+
+.. _WIG: http://genome.ucsc.edu/FAQ/FAQformat#format6
+.. _BED: http://genome.ucsc.edu/FAQ/FAQformat#format1
+.. _bedGraph: http://genome.ucsc.edu/goldenPath/help/bedgraph.html
+
+

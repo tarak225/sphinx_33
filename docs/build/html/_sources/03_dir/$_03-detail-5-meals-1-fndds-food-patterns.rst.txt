@@ -1,0 +1,91 @@
+
+.. _$_03-detail-5-meals-1-fndds-food-patterns:
+
+=============
+Food Patterns
+=============
+
+Intro text
+
+------------------------
+USDA FNDDS Food Patterns
+------------------------
+
+.. csv-table::
+   :header: "Food Pattern Class", "Food Pattern Type", "Term"
+   :widths: 10, 10, 10
+
+   "Beverages", "Total beverages", "Bev_0"
+   "Beverages", "Total alcoholic beverages", "Bev_1"
+   "Beverages", "Total nonalcoholic beverages", "Bev_2"
+   "Beverages", "Wine", "Bev_11"
+   "Beverages", "Beer and ale", "Bev_12"
+   "Beverages", "Coffee", "Bev_21"
+   "Beverages", "Tea", "Bev_22"
+   "Beverages", "Total fruit juice drinks and fruit flavored drinks", "Bev_23"
+   "Beverages", "Regular fruit juice drinks and fruit flavored drinks", "Bev_231"
+   "Beverages", "Low-calorie fruit juice drinks and fruit flavored drinks", "Bev_232"
+   "Beverages", "Total carbonated soft drinks", "Bev_24"
+   "Beverages", "Regular carbonated soft drinks", "Bev_241"
+   "Beverages", "Low-calorie carbonated soft drinks", "Bev_242"
+   "Beverages", "Water", "Water_1"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Eggs", "Egg_0"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Total fats and oils", "Fat_0"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Table fats", "Fat_1"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Salad dressings", "Fat_2"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Legumes", "Legume_0"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Nuts and Seeds", "Nutseed_0"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Total sugars and sweets", "Sugar_0"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Sugars", "Sugar_1"
+   "Eggs; Legumes; Nuts and Seeds; Fats and Oils; Sugars and Sweets", "Candy", "Sugar_2"
+   "Fruits", "Total fruits", "Fruit_0"
+   "Fruits", "Total citrus fruits and juices", "Fruit_1"
+   "Fruits", "Dried fruit", "Fruit_2"
+   "Fruits", "Total other fruits, mixtures, juices", "Fruit_3"
+   "Fruits", "Citrus juices", "Fruit_11"
+   "Fruits", "Apples", "Fruit_31"
+   "Fruits", "Bananas", "Fruit_32"
+   "Fruits", "Melon and berries", "Fruit_33"
+   "Fruits", "Other fruits and mixtures, mainly fruit", "Fruit_34"
+   "Fruits", "Non-citrus juices and nectars", "Fruit_35"
+   "Grain Products", "Total Grain", "Grain_0"
+   "Grain Products", "Yeast breads and rolls", "Grain_1"
+   "Grain Products", "Total cereals, rice, and pasta", "Grain_2"
+   "Grain Products", "Quick breads, pancakes, French toast", "Grain_3"
+   "Grain Products", "Cakes, cookies, pastries, pies", "Grain_4"
+   "Grain Products", "Crackers, popcorn, pretzels, corn chips", "Grain_5"
+   "Grain Products", "Mixtures mainly grain", "Grain_6"
+   "Grain Products", "Ready-to-eat cereals", "Grain_21"
+   "Grain Products", "Rice", "Grain_22"
+   "Grain Products", "Pasta", "Grain_23"
+   "Meat, Poultry, and Fish", "Total meat, poultry, and fish", "Meat_0"
+   "Meat, Poultry, and Fish", "Beef", "Meat_1"
+   "Meat, Poultry, and Fish", "Pork", "Meat_2"
+   "Meat, Poultry, and Fish", "Lamb, veal, game", "Meat_3"
+   "Meat, Poultry, and Fish", "Organ meats", "Meat_4"
+   "Meat, Poultry, and Fish", "Frankfurters, sausage, luncheon meats", "Meat_5"
+   "Meat, Poultry, and Fish", "Total poultry", "Meat_6"
+   "Meat, Poultry, and Fish", "Fish and shellfish", "Meat_7"
+   "Meat, Poultry, and Fish", "Mixtures mainly meat, poultry, fish", "Meat_8"
+   "Meat, Poultry, and Fish", "Chicken", "Meat_61"
+   "Milk and Milk Products", "Total milk and milk products", "Milk_0"
+   "Milk and Milk Products", "Total milk, milk drinks, yogurt", "Milk_1"
+   "Milk and Milk Products", "Yogurt", "Milk_2"
+   "Milk and Milk Products", "Milk desserts", "Milk_3"
+   "Milk and Milk Products", "Cheese", "Milk_4"
+   "Milk and Milk Products", "", "Milk_0C"
+   "Milk and Milk Products", "Total fluid milk", "Milk_11"
+   "Milk and Milk Products", "Whole milk", "Milk_111"
+   "Milk and Milk Products", "Low fat milk", "Milk_112"
+   "Milk and Milk Products", "Skim milk", "Milk_113"
+   "Vegetables", "Total vegetables", "Veg_0"
+   "Vegetables", "White potatoes", "Veg_1"
+   "Vegetables", "Dark green vegetables", "Veg_02"
+   "Vegetables", "Deep yellow vegetables", "Veg_3"
+   "Vegetables", "Tomatoes", "Veg_4"
+   "Vegetables", "Lettuce, lettuce-based salads", "Veg_5"
+   "Vegetables", "Green beans", "Veg_6"
+   "Vegetables", "Corn, green peas, lima beans", "Veg_7"
+   "Vegetables", "Other vegetables", "Veg_8"
+   "Vegetables", "Fried potatoes", "Veg_11"
+

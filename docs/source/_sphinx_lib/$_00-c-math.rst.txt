@@ -1,0 +1,33 @@
+Testing Sphinx math
+
+.. math::
+   \begin{matrix}
+      (AB)(j, i) =
+      \sum_{k = 1}^n B^t (i, k) A^t (k, j)
+   \end{matrix}
+
+.. math::
+      A + (B + C) = (A + B) + C
+
+.. math::
+   \frac{\partial \left (\bar{U} / J \right )}{\partial t} + \frac{\partial \vec{F'}}{\partial \xi} + \frac{\partial \vec{G'}}{\partial \eta} = 0
+
+.. math::
+   E_{t} = \frac{p}{\gamma - 1} + \frac{\rho}{2} \left ( u^{2} + v^{2} \right )
+
+.. math::
+   \Delta t^{n}_{i,j} = \left \{ \frac{CFL}{|\tilde{U}| + |\tilde{V}| + c \sqrt{ \xi^{2}_{x} + \xi^{2}_{y} + \eta^{2}_{x} + \eta^{2}_{y} + 2 |\xi_{x} \eta_{x} + \xi_{y} \eta_{y} } | } \right \}^{n}_{i,j}
+
+.. math::
+   (a + b)^2 = a^2 + 2ab + b^2
+
+   (a - b)^2 = a^2 - 2ab + b^2
+
+.. math::
+
+   (a + b)^2 &=  (a + b)(a + b) \\
+   &=  a^2 + 2ab + b^2
+
+.. math:: (a + b)^2 = a^2 + 2ab + b^2
+
+.. math:: e^{i\pi} + 1 = 0

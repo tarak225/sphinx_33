@@ -1,0 +1,23 @@
+
+.. _05-complementary-1:
+
+=================
+5-complementary-1
+=================
+
+.. contents::
+    :local:
+    :depth: 1
+
+heading-1
+---------
+
+The Genomedata hierarchy:
+
+  Each :class:`Genome` contains many :class:`Chromosomes <Chromosome>`
+    Each :class:`Chromosome` contains many :class:`Supercontigs <Supercontig>`
+      Each :class:`Supercontig` contains one ``continuous`` data set
+        Each ``continuous`` data set is a numpy.array of floating
+        point numbers with a column for each data track and a row
+        for each base in the data set.
+

@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Generic Verbs and Nouns</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="User Friendly Designs" href="%24_02-core-09-user-friendly.html" />
+    <link rel="prev" title="Examples: Production Applications" href="%24_02-core-07-examples.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="generic-verbs-and-nouns">
+<span id="core-08-relationships"></span><h1>Generic Verbs and Nouns<a class="headerlink" href="#generic-verbs-and-nouns" title="Permalink to this headline">¶</a></h1>
+<p id="return-to-top-02-core-08-relationships">This section addresses:</p>
+<dl class="rst role">
+<dt class="sig sig-object rst" id="role-USDA-12">
+<span id="role-USDA #12"></span><span class="sig-name descname"><span class="pre">:USDA</span> <span class="pre">#12:</span></span><a class="headerlink" href="#role-USDA-12" title="Permalink to this definition">¶</a></dt>
+<dd><p>Support capture/documentation of metadata for food composition and non-composition data.</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following terms are members of a <a class="reference internal" href="../10_dir/%24_10-term-project.html#terms-class"><span class="std std-ref">class</span></a> of ontology-independent-terms. These terms map to <strong>specific terms</strong> in ontologies. The summary below identifies:</p>
+<ul class="simple">
+<li><p><code class="xref py py-class docutils literal notranslate"><span class="pre">verb</span></code> (a.k.a. predicate, relationship, object property)</p></li>
+<li><p>noun (a.k.a. thing, object) specified as <strong>X</strong> and <strong>Y</strong>. A more precise term is specified as <strong>{noun}</strong>. A precise noun, as specified by an <a class="reference internal" href="../10_dir/%24_10-term-project.html#terms-authority"><span class="std std-ref">authority</span></a>, is identified on <a class="reference external" href="$_02-core-15-integration.html">Data Integration</a>. Many examples are listed in <a class="reference external" href="$_07-glossary.html">Glossary of Terms</a>.</p></li>
+</ul>
+</div>
+<section id="isa-relationships">
+<h2><a class="reference external" href="http://en.wikipedia.org/wiki/Is-a">isA</a> Relationships<a class="headerlink" href="#isa-relationships" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Relationship</p></th>
+<th class="head"><p>Inverse</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">includesSpecific</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">isA</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Taxon <code class="xref py py-class docutils literal notranslate"><span class="pre">isA</span></code> Taxon</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Food product <code class="xref py py-class docutils literal notranslate"><span class="pre">isA</span></code> Food product</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Food product <code class="xref py py-class docutils literal notranslate"><span class="pre">isOneOf</span></code> {Food product list}</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">inheritsTo</span></code> Y</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">inheritsFrom</span></code> X</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="wordnet-whole-part-relationships-holonymy-meronymy">
+<h2>WordNet whole-part Relationships (<a class="reference external" href="http://en.wikipedia.org/wiki/Holonymy">Holonymy/meronymy</a>)<a class="headerlink" href="#wordnet-whole-part-relationships-holonymy-meronymy" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Relationship</p></th>
+<th class="head"><p>Inverse</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">containsSubstance</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">substanceContainedIn</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">containsSubstance</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>    {Substance, amount in total, amount in solids, label claim (yes/no) }</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">hasIngredient</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">ingredientOf</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">hasIngredient</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>    {Food product, rank, total ingredient in total product,</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>    ingredient solids in product solids {purpose list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">mayHaveIngredient</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>    {Food product, rank, total ingredient in total product,</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>    ingredient solids in product solids {purpose list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">madeFrom</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">usedToMake</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>Container <code class="xref py py-class docutils literal notranslate"><span class="pre">usesStructuralStrengthMaterial</span></code> Substance</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Container <code class="xref py py-class docutils literal notranslate"><span class="pre">usesCoatingMaterial</span></code> Substance</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">isMadeFrom</span></code> FoodProduct</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">isDerivedFrom</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>    {Food source, environment, agricultural treatment, growth stage}</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">isPartOf</span></code> {Anatomical part, growth stage, cut, grade}</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">isExtractedSubstance</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>    {Extracted substance, extracting substance, process,</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>    temperature, duration, sequence_ID.}</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">hadRemovedSubstance</span></code> {Extracted substance, etc.}</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">yieldsPortion</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">portionOf</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">spatiallyIncludes</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">spatiallyIncludedIn</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">hasComponent</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">componentOf</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">containsDish</span></code> FoodProduct</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="additional-relationships">
+<h2>Additional Relationships<a class="headerlink" href="#additional-relationships" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Relationship</p></th>
+<th class="head"><p>Inverse</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">causes</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">causedBy</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">instrumentFor</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">performedByInstrument</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">processFor</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">usesProcess</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">appliedTo</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">underwentProcess</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">underwentProcess</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>    {Process, equipment, temperature, duration,</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>    place/stage, sequence_ID, {purpose list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">isForSpecialUse</span></code> {Use/diet, {country list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">madeFor</span></code> {Consumer, {country list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">usuallyConsumedFor</span></code> {Meal type, {country list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>{Taxon, AnatomicalPart} <code class="xref py py-class docutils literal notranslate"><span class="pre">usedFor</span></code> {purpose, priority {country list} }</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Substance <code class="xref py py-class docutils literal notranslate"><span class="pre">usedFor</span></code> {purpose, priority, food product}</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">beneficialFor</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">benefitsFrom</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">treatmentFor</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">treatedWith</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">harmfulFor</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">harmedBy</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>Substance <code class="xref py py-class docutils literal notranslate"><span class="pre">harmfulFor</span></code> {harmful effect, strength, food product}</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">growsIn</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">growthEnvironmentFor</span></code> X</p></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">hasPhase</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">phaseOf</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">hasState</span></code> Physical state</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">hasForm</span></code> Y</p></td>
+<td><p>Y <code class="xref py py-class docutils literal notranslate"><span class="pre">isFormOf</span></code> X</p></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">hasForm</span></code> Physical form</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Container <code class="xref py py-class docutils literal notranslate"><span class="pre">hasForm</span></code> Physical form</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>FoodProduct <code class="xref py py-class docutils literal notranslate"><span class="pre">packedIn</span></code> Container</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>X <code class="xref py py-class docutils literal notranslate"><span class="pre">hasPrice</span></code> MoneyAmount</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Substance <code class="xref py py-class docutils literal notranslate"><span class="pre">measuredIn</span></code> Unit of measurement</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a class="reference internal" href="#return-to-top-02-core-08-relationships"><span class="std std-ref">Return to top</span></a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">USDA Nutrition Database</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../00_dir/%24_00-prologue.html">Prologue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_dir/%24_01-convention.html">Words and Formats used in Proposal</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="%24_02-core.html">Features - Core</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-01-preview.html">Preview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-02-deliverables.html">Deliverables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-03-training.html">Training and Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-04-rights.html">Property Rights</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-05-plan.html">Project Plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-06-services.html">Services, Products and Technologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-07-examples.html">Examples: Production Applications</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Generic Verbs and Nouns</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-09-user-friendly.html">User Friendly Designs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-10-deposition.html">Data Depository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-11-mathematics.html">Nutrition Mathematics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-12-rest-prov.html">REST Services and Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-13-internationalization.html">International Data and Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-14-harmonization.html">Information Harmonization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-15-integration.html">Data Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-16-stakeholders.html">USDA Stakeholder Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-17-infrastructure.html">Infrastructure and Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-18-deployment.html">Deployment Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_02-core-19-non-composition-data.html">Non-composition Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../03_dir/%24_03-detail.html">Features - Core with Detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_dir/%24_04-fda.html">Features - FDA Labeling Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_dir/%24_06-future.html">Features - Future</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_dir/%24_07-glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_dir/%24_10-term-project.html">Terms related to Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_dir/%24_11-term-ontology.html">Terms imported from Ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_dir/%24_13-bibliography.html">Bibliographies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15_dir/%24_15-ontomatica.html">Ontomatica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_dir/%24_12-epilogue.html">Epilogue</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="%24_02-core.html">Features - Core</a><ul>
+      <li>Previous: <a href="%24_02-core-07-examples.html" title="previous chapter">Examples: Production Applications</a></li>
+      <li>Next: <a href="%24_02-core-09-user-friendly.html" title="next chapter">User Friendly Designs</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+      
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

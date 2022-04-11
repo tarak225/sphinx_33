@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Words Used in Proposal</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Format Used in Proposal" href="%24_01-convention-02-format.html" />
+    <link rel="prev" title="Words and Formats used in Proposal" href="%24_01-convention.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="words-used-in-proposal">
+<span id="convention-words"></span><h1>Words Used in Proposal<a class="headerlink" href="#words-used-in-proposal" title="Permalink to this headline">¶</a></h1>
+<section id="words-for-specifying-data">
+<span id="return-to-top-01-convention-words"></span><h2>Words for specifying data<a class="headerlink" href="#words-for-specifying-data" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Data</dt><dd><p>An item of factual information derived from measurement or research.</p>
+</dd>
+<dt>Data Element</dt><dd><p>Field or column in a data-set or data-base that stores Data.</p>
+</dd>
+<dt>Data Dictionary</dt><dd><p>Specifies information about a Data Element. Information includes field name, field description, data type and constraint for Data Element.</p>
+</dd>
+<dt>Data Model</dt><dd><p>Representation of how to aggregate and interrelate Data defined by a Data Dictionary.</p>
+</dd>
+<dt>Entity-Relationship Model</dt><dd><p>Representation of how to aggregate and inter-relate information. An entity is a Thing capable of an independent existence and is uniquely identified. Entities are nouns. Examples: a food commodity, a food consumer, a recipe, or a food label calculation. A relationship specifies how entities are related to one another. Relationships are verbs, linking two or more nouns. Examples are: beneficial for, caused by, composed of, made from, produced by, used in. Entities and relationships have Properties, such as a distinguishing quality, a physical state, or a characteristic that is determined by a gene or group of genes.</p>
+</dd>
+</dl>
+</section>
+<section id="words-for-specifying-information">
+<h2>Words for specifying information<a class="headerlink" href="#words-for-specifying-information" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Context</dt><dd><p>Discourse that surrounds a language unit and helps to determine its interpretation. For the USDA project, the Context of the language unit is Food. In other words, the Domain-of-Context is Food.</p>
+</dd>
+<dt>Vocabulary</dt><dd><p>A listing or grouping of words that are common to a Domain-of-Context.</p>
+</dd>
+<dt>Controlled Vocabulary</dt><dd><p>Authorized words that have been preselected for a Domain-of-Context. Contrasts with natural language vocabularies, where there is no restriction on the vocabulary.</p>
+</dd>
+<dt>Term</dt><dd><p>Word in a Controlled Vocabulary that references a Description. Term is described in a Thesaurus.</p>
+</dd>
+<dt>Taxonomy</dt><dd><p>Categorization of Things (entities). Categorization is based on discrete sets. Taxonomy may have multiple forms, such as lists and hierarchies.</p>
+</dd>
+<dt>Metadata</dt><dd><p>Same as a word in a Taxonomy.</p>
+</dd>
+<dt>Thesaurus</dt><dd><p>Provides information about a Term in a Controlled Vocabulary. Includes long name, short name or acronym, and description in form of Scope Notes and Additional Information.</p>
+</dd>
+<dt>Glossary</dt><dd><p>Defines words associated with a project. A word in a glossary is not necessarily a Term in a Controlled Vocabulary.</p>
+</dd>
+<dt>Encyclopedia</dt><dd><p>The services known as Wikipedia and DBpedia. Wikipedia disambiguation associates a word with a Domain-of-Context.</p>
+</dd>
+</dl>
+</section>
+<section id="words-for-specifying-knowledge">
+<h2>Words for specifying knowledge<a class="headerlink" href="#words-for-specifying-knowledge" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Syntax</dt><dd><p>Rules for specifying Terms to create structures like phrases, sentences, and paragraphs.</p>
+</dd>
+<dt>Grammar</dt><dd><p>Rules for specifying a set of well-formed structures using Terms of a given Language.</p>
+</dd>
+<dt>Language</dt><dd><p>Set of Terms specified by a Syntax and sequenced according to a Grammar. Language is used to systematically define and aggregate knowledge.</p>
+</dd>
+<dt>Ontology</dt><dd><p>Combination of the above to express higher order activities, such as communications, translation, learning, understanding, teaching, and making decisions. More specifically, a formal way to represent entities, ideas, and events (Things). Things have Properties such as names and values. Things have Relations such as kinship and sequence of steps (ordinality) to perform a task. Things, Properties and Relations are organized by categories (Taxonomy). Knowledge - in a form that can be processed by a computer - is the categorical ordering of Things, Properties and Relations from Domain-of-Context into a Domain-of-Knowledge.</p>
+</dd>
+</dl>
+</section>
+<section id="words-for-specifying-relations">
+<h2>Words for specifying relations<a class="headerlink" href="#words-for-specifying-relations" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt>IS-A relationship</dt><dd><p>Specifies relations between abstractions (e.g. types, classes), where one class A is a subclass of another class B (and so B is a superclass of A). In other words, type A is a subtype of type B when A’s specification implies B’s specification. More specifically, the IS-A relationship is defined by:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Hypernymy-Hyponymy (supertype-subtype) relations between types (classes) defining a taxonomic hierarchy, where a hyponym (subtype, subclass) has a type-of (IS-A) relationship with its hypernym (supertype, superclass)</p></li>
+<li><p>Holonymy-Meronymy (container-part or member) relations between types (classes) defining a possessive hierarchy.</p></li>
+</ol>
+</div></blockquote>
+</dd>
+<dt>HAS-A relationship</dt><dd><p>Specifies part-whole relations. Meronym is the name given to a constituent part of, the substance of, or a member of something. ‘X’ is a meronym of ‘Y’ if an X is a part of a Y. A meronym may be:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Transitive - “Parts of parts are parts of the whole” - if A is part of B and B is part of C, then A is part of C.</p></li>
+<li><p>Reflexive - “Everything is part of itself” - A is part of A.</p></li>
+<li><p>Antisymmetric - “Nothing is a part of its parts” - if A is part of B and A !- B then B is not part of A.</p></li>
+</ol>
+</div></blockquote>
+</dd>
+<dt>SYMMETRIC relationship</dt><dd><p>Declaration that Terms are essentially the same and are interchangeable.</p>
+</dd>
+<dt>Domain</dt><dd><p>Set of values for a Term declared in a Relation.</p>
+</dd>
+<dt>Range</dt><dd><p>Limits for the values of a Term declared in a Relation.</p>
+</dd>
+</dl>
+</section>
+<section id="words-for-implementing-an-ontology">
+<h2>Words for implementing an Ontology<a class="headerlink" href="#words-for-implementing-an-ontology" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>Ontology (continuing to add precision to the word “Ontology” previously used above)</dt><dd><p>Uses a Controlled Vocabulary to specify Things, Properties and Relations for a Domain-of-Knowledge. Defines a set of statements about a Domain-of-Knowledge. Statements in Ontomatica ontologies are implemented as Graphs.</p>
+</dd>
+<dt>Faceted Classification</dt><dd><p>Enables assignment of a Term to multiple categories in a Taxonomy. Faceted search (a.k.a. faceted navigation or faceted browsing) is the user-interface of a faceted classification system. Users explore a collection of information by applying multiple filters (a.k.a. facet terms).</p>
+</dd>
+<dt>Facet Tree</dt><dd><p>Hierarchy of Facets in a specific Domain-of-Knowledge.</p>
+</dd>
+<dt>Thing (continuing to add precision to the word “Thing” previously used above)</dt><dd><p>An entity capable of an independent existence that can be uniquely identified.</p>
+</dd>
+<dt>Subject</dt><dd><p>An observer; an entity that has a relationship with another entity that exists outside of itself (an “object”). A Subject is an observer and an Object is an entity observed.</p>
+</dd>
+<dt>Object</dt><dd><p>An entity observed by a Subject.</p>
+</dd>
+<dt>Item</dt><dd><p>A Thing - associated with a Domain-of-Knowledge - that is described by one or more Terms in one or more Facet Trees. Item is comparable to Data in a Data Model and to an instance of an Entity-type in an Entity-Relationship model.</p>
+</dd>
+<dt>Graph</dt><dd><p>Composed of vertices {nodes} and lines {edges} that connect vertices. Ontomatica graphs are Directed Acyclic Graphs (DAG) that represent Things and causal Relations between them.</p>
+</dd>
+<dt>Facet and Facet Term (as defined during Facet Classification and revealed in a Facet Tree)</dt><dd><p>Vertex {node} in a Graph. Logically, a facet is a noun. A class term (word identifying a collection of Facet Terms) is called a Facet. A type term (instances of members of a Facet) is called Facet Term. Code assigned to Facet Term (FT) is called Facet Term Code (FTC).</p>
+</dd>
+<dt>Facet Map</dt><dd><p>Pairing of an Item with one or more Facet Terms in one or more Facet Trees.</p>
+</dd>
+<dt>Relation (continuing to add precision to the word “Relation” previously used above)</dt><dd><p>Line {edge} expressing connection between Facets and Facet Terms in a Graph. Logically, a relation is a verb. Term that describes a Relation is a Predicate.</p>
+</dd>
+<dt>Predicate and Predicate Term</dt><dd><p>Type {single} or class {hierarchy} of Relations. A class term (word identifying a collection of Predicate Terms) is called a Predicate. A type term (instances of members of a Predicate Taxonomy) is called Predicate Term. Code assigned to Predicate Term (PT) is called Predicate Term Code (PTC).</p>
+</dd>
+<dt>Syntax (continuing to add precision to the word “Syntax” previously used above, but now specific to Ontology)</dt><dd><p>Web Ontology Language (OWL) that specifies the Syntax for creating structures like phrases, sentences, and paragraphs.</p>
+</dd>
+<dt>Grammar (continuing to add precision to the word “Grammar” previously used above, but now specific to Ontology)</dt><dd><p>Set of statements in the logical form: <code class="xref py py-class docutils literal notranslate"><span class="pre">subject</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">predicate</span></code> <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code> where <code class="xref py py-class docutils literal notranslate"><span class="pre">subject</span></code> and <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code> are Facet Terms and <code class="xref py py-class docutils literal notranslate"><span class="pre">predicate</span></code> are Predicate Terms.</p>
+</dd>
+</dl>
+<p><a class="reference internal" href="#return-to-top-01-convention-words"><span class="std std-ref">Return to top</span></a></p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">USDA Nutrition Database</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../00_dir/%24_00-prologue.html">Prologue</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="%24_01-convention.html">Words and Formats used in Proposal</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Words Used in Proposal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="%24_01-convention-02-format.html">Format Used in Proposal</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../02_dir/%24_02-core.html">Features - Core</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_dir/%24_03-detail.html">Features - Core with Detail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_dir/%24_04-fda.html">Features - FDA Labeling Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06_dir/%24_06-future.html">Features - Future</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_dir/%24_07-glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_dir/%24_10-term-project.html">Terms related to Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_dir/%24_11-term-ontology.html">Terms imported from Ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_dir/%24_13-bibliography.html">Bibliographies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15_dir/%24_15-ontomatica.html">Ontomatica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12_dir/%24_12-epilogue.html">Epilogue</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="%24_01-convention.html">Words and Formats used in Proposal</a><ul>
+      <li>Previous: <a href="%24_01-convention.html" title="previous chapter">Words and Formats used in Proposal</a></li>
+      <li>Next: <a href="%24_01-convention-02-format.html" title="next chapter">Format Used in Proposal</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      
+      
+      
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.4.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
